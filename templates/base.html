@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <h1> Welcome To MY Salary Prediction Page</h1>
+        <p> This is the demo app using flask, It is used to predict salary based on experience,test_score and interview score</p>
+
+    </head>
+
+    <body>
+           <form action = 'predict' method='post'>
+            <input type = 'number' name = 'experience' placeholder = 'Experience' required = 'required'/>
+            <input type = 'number' name = 'test_score' placeholder = 'Test_Score' required = 'required'/> 
+            <input type = 'number' name = 'interview_score' placeholder = 'Interview_Score' required = 'required'/> 
+            <button type ='submit'> Predict </button>
+            </form>
+            {{prediction_text}}
+    </body>
+
+</html>
